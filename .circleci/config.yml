@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  test:
+  build:
     docker:
       - image: circleci/node:10
     working_directory: ~/cicdpractice
@@ -24,4 +24,4 @@ workflows:
   version: 2
   ultimate_pipeline:
     jobs:
-      - test
+      - build
